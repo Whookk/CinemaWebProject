@@ -47,8 +47,8 @@ app.get('/', (request, response) => {
      res.sendFile(`${__dirname}/pages/index.html`);
 });
 
-const hostname = '127.0.0.1';
-const port = 5555;
+const hostname = '0.0.0.0';
+const port = process.env.PORT || 5555;
 app.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
     console.log(`Application listening on port ${port}!`);
