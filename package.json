@@ -16,6 +16,11 @@
     "supertest": "^7.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node database.js"
   }
+  
+
 }
+
+
